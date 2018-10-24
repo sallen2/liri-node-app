@@ -1,4 +1,4 @@
-# liri-node-app
+# :sparkles: liri-node-app :sparkles:
 
 my version of apple's Siri.
 ---------------------------
