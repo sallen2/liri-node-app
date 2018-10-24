@@ -4,7 +4,7 @@ my version of apple's Siri.
 ---------------------------
 
 ### 1) ask liri movie-this <your movie name> and liri will respond with data about the movie
-![](https://cl.ly/a995414ef1ad/Screen%252520Recording%2525202018-10-24%252520at%25252006.19%252520PM.gif | width=100)
+![](https://cl.ly/a995414ef1ad/Screen%252520Recording%2525202018-10-24%252520at%25252006.19%252520PM.gif)
 ### 2) ask liri spotify-this-song <your song name> and liri will give you info about songs with that name
 ![](https://cl.ly/68eb6f9b9fcc/Screen%252520Recording%2525202018-10-24%252520at%25252006.23%252520PM.gif)
 ### 3) ask liri concert-this <artist name> and you will get concert info about your favorite artist and where they are playing
