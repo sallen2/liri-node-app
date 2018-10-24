@@ -14,5 +14,5 @@ my version of apple's Siri.
 ### liri will read the file and do the task.
 ![](https://cl.ly/ded10add1ab5/Screen%252520Recording%2525202018-10-24%252520at%25252006.29%252520PM.gif)
   
-### info is logged to the terminal and appended to the log.txt file
+### 5) info is logged to the terminal and appended to the log.txt file
 ![](https://cl.ly/6deaec9e6ac1/Screen%252520Recording%2525202018-10-24%252520at%25252006.31%252520PM.gif)
