@@ -18,6 +18,26 @@ function liri(action, subAction) {
         `https://www.omdbapi.com/?t=mr+nobody&apikey=trilogy`,
         (err, res, body) => {
           let info = JSON.parse(body);
+          fs.appendFile(
+            `log.txt`,
+            `
+---------------------------------------------------------------------------------------------------------
+Movie: ${info.Title}
+Released: ${info.Year}
+IMDB Rating: ${info.imdbRating}
+Rotten Tomatoes Rating: ${info.Ratings[1].Value}
+Production: ${info.Production}
+Language: ${info.Language}
+Plot: ${info.Plot}
+Actors: ${info.Actors}
+---------------------------------------------------------------------------------------------------------
+          `,
+            err => {
+              if (err) {
+                console.log("err", err);
+              }
+            }
+          );
           console.log(
             `
 ---------------------------------------------------------------------------------------------------------
@@ -48,6 +68,26 @@ Actors: ${info.Actors}
               rtScore = rt.Value;
             }
           });
+          fs.appendFile(
+            `log.txt`,
+            `
+---------------------------------------------------------------------------------------------------------
+Movie: ${info.Title}
+Released: ${info.Year}
+IMDB Rating: ${info.imdbRating}
+Rotten Tomatoes Rating: ${info.Ratings[1].Value}
+Production: ${info.Production}
+Language: ${info.Language}
+Plot: ${info.Plot}
+Actors: ${info.Actors}
+---------------------------------------------------------------------------------------------------------
+          `,
+            err => {
+              if (err) {
+                console.log("err", err);
+              }
+            }
+          );
           console.log(
             `
 ----------------------------------------------------------------------------------------------------------
@@ -74,6 +114,21 @@ Actors: ${info.Actors}
         let info = JSON.parse(body);
         console.log(`Results for ${subAction.join(" ").trim()}`);
         info.forEach(venue => {
+          fs.appendFile(
+            `log.txt`,
+            `
+---------------------------------------------------------------------------------------------------------
+Name of the venue: ${venue.venue.name}
+Venue location: ${venue.venue.city}
+Date of the Event: ${moment(venue.datetime).format("MM/DD/YYYY")}
+---------------------------------------------------------------------------------------------------------
+          `,
+            err => {
+              if (err) {
+                console.log("err", err);
+              }
+            }
+          );
           console.log(
             `
 ------------------------------------------------------------------------
@@ -94,6 +149,22 @@ Date of the Event: ${moment(venue.datetime).format("MM/DD/YYYY")}
           let info = res.tracks.items;
           info.forEach((song, i) => {
             if (song.artists[0].name === `Ace of Base`) {
+              fs.appendFile(
+                `log.txt`,
+                `
+---------------------------------------------------------------------------------------------------------
+Artist: ${song.artists[0].name}
+Song: ${song.name}
+Preview: ${song.preview_url}
+Album: ${song.album.name}
+---------------------------------------------------------------------------------------------------------
+              `,
+                err => {
+                  if (err) {
+                    console.log("err", err);
+                  }
+                }
+              );
               console.log(
                 `
 ---------------------------------------------------
@@ -117,6 +188,22 @@ Album: ${song.album.name}
           let info = res.tracks.items;
           info.forEach((song, i) => {
             if (song.preview_url !== null) {
+              fs.appendFile(
+                `log.txt`,
+                `
+---------------------------------------------------------------------------------------------------------
+Artist: ${song.artists[0].name}
+Song: ${song.name}
+Preview: ${song.preview_url}
+Album: ${song.album.name}
+---------------------------------------------------------------------------------------------------------
+              `,
+                err => {
+                  if (err) {
+                    console.log("err", err);
+                  }
+                }
+              );
               console.log(
                 `
 ---------------------------------------------------
