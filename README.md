@@ -8,7 +8,7 @@ my version of apple's Siri.
 ### 2) ask liri spotify-this-song <your song name> and liri will give you info about songs with that name
 ![](https://cl.ly/68eb6f9b9fcc/Screen%252520Recording%2525202018-10-24%252520at%25252006.23%252520PM.gif)
 ### 3) ask liri concert-this <artist name> and you will get concert info about your favorite artist and where they are playing
-![](https://cl.ly/ac1995f8efa8/Screen%252520Recording%2525202018-10-24%252520at%25252006.27%252520PM.gif)
+![](https://cl.ly/7ccfd6c5d8e1/Screen%252520Recording%2525202018-10-24%252520at%25252006.25%252520PM.gif)
 ### 4) ask liri do-what-it-says and whatever of the 3 task you put in the random.txt file 
 ![](https://cl.ly/ac1995f8efa8/download/Screen%252520Recording%2525202018-10-24%252520at%25252006.27%252520PM.gif)
 ### liri will read the file and do the task.
